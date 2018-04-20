@@ -21,6 +21,12 @@ class DueDateTask < Task
 end
 
 thursday = TaskList.new
-thingy = DueDateTask.new("Buy flowers for Mom", "she likes tulips", "4 19 2018")
-thursday.add_task(thingy)
-thursday.showTodayIncomplete
+thingy = DueDateTask.new("Buy flowers for Mom", "she likes tulips", "20/4/2018")
+otherthingy = Task.new("Title3", "Description3")
+lastthingy = DueDateTask.new("Title1", "Description1", "1/4/2018")
+
+print thingy.duedate.class
+# thursday.add_task(thingy)
+# thursday.add_task(otherthingy)
+# thursday.add_task(lastthingy)
+# thursday.filterIncompleteTasks
